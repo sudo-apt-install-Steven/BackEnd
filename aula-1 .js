@@ -1,6 +1,6 @@
-let valor = 3.141516;
-let text = "Meu primeiro projeto em JavaScript. ";
-let booleano = true;
+let valor = 3.141516; // variável.
+let text = "Meu primeiro projeto em JavaScript. "; // variável.
+let booleano = true; // variável.
 
 console.log(valor.toFixed(2)); // arredonda o valor para 2 casas decimais antes da vírgula.
 console.log("Tipo: " + typeof valor); // Retorna o tipo da variável.
