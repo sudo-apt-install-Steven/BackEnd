@@ -15,7 +15,7 @@ marcasCarros.push("Chevrolet", "Toyota", "Ford", "BMW", "Lenovo")
 console.log(estados[0,6]); // ver o item 0,6 do array (lista) estados.
 console.log("Tamanho: " + estados.length); // ver o tamnho do array (lista).
 console.log(marcasCarros[0,2]) // ver o item na posição [0,2] (0,2 seria de trás para frente).
-console.log("Total Letras: " + marcasCarros[0,2].length); // ver o tanto de letras no item da posição 0,2.
+console.log("Total Letras: " + marcasCarros[0,2].length); // Concatenação. Ver o tanto de letras no item da posição 0,2.
 console.log(`Estados: ${estados[1]}`); // Interpolação.
 
 
