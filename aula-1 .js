@@ -19,3 +19,4 @@ console.log("Total Letras: " + marcasCarros[0,2].length); // Concatenação. Ver
 console.log(`Estados: ${estados[1]}`); // Interpolação.
 
 
+let dinossaur = ["Ilha Nublar", "The Isle", "Jurassic Park", "Jurassic World"];
