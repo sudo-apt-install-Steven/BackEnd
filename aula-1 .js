@@ -9,4 +9,11 @@ console.log("Tipo: " + typeof text); // Retorna o tipo da variável.
 console.log(booleano.toString()); // Converte para texto.
 console.log("Tipo: " + typeof booleano); // Retorna o tipo da variável.
 
+let estados = ["São Paulo", "Minas Gerais", "Rondônia", "Jurassic World", "Acre", "Amazon", "mercado livre"]; // cria um array (lista) com valores definidos.
+let marcasCarros = []; // criar um array (lista) infinito, ou seja vai adicionando itens sem limitação.
+marcasCarros.push("Chevrolet", "Toyota", "Ford", "BMW", "Lenovo")
+console.log(estados[0,6]); // ver o item 0,6 do array (lista) estados.
+console.log("Tamanho: " + estados.length); // ver o tamnho do array (lista).
+console.log(marcasCarros[0,2]) // ver o item na posição [0,2] (0,2 seria de trás para frente).
+console.log("Total Letras: " + marcasCarros[0,2].length); // ver o tanto de letras no item da posição 0,2.
 
