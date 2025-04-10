@@ -8,5 +8,5 @@ let n2 = 3
 console.log("10 + 3 = " + (n1 + n2));
 console.log("10 - 3 = " + (n1 - n2));
 console.log("10 X 3 = " + (n1 * n2));
-console.log("10 / 3 = " + (n1 / n2).toFixed(2));
+console.log("10 / 3 = " + (n1 / n2).toFixed(3));
 
