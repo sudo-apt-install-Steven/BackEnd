@@ -18,3 +18,4 @@ else {
 };
 let cidade = entradaDados.question('Qual a sua cidade atual? ');
 console.log(`A sua cidade é ${cidade}.`);
+
