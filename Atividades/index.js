@@ -4,12 +4,23 @@ let nome = entradaDados.question('Qual o seu nome? ');
 console.log(`Olá ${nome}, tudo bem?`);
 let idade = entradaDados.questionInt('Quantos anos você tem? ');
 console.log(`Você tem ${idade} anos.`);
+let mes = entradaDados.questionInt('Qual o mês do seu nascimento? (1-12) ');
 let anoAtual = new Date().getFullYear();
-let anoNascimento = anoAtual - idade;
+let anoNascimento = anoAtual - idd;
+let idd = 0;
+if (mes < 5) {
+    let idd = (idade - 1);
+    let anoNascimento = anoAtual - idd;
+    console.log(`Você nasceu em ${anoNascimento}.`);
+}
+else {
+    console.log(`Você nasceu no mês de ${mes}.`);
+    let anoNascimento = anoAtual - idade;
+    console.log(` Você nasceu em ${anoNascimento}.`);
+};
+
+
 console.log(`Você nasceu em ${anoNascimento}.`);
-let cor = entradaDados.question('Qual a sua cor favorita? ');
-console.log(`A sua cor favorita é ${cor}.`);
-let animal = entradaDados.question('Qual o seu animal favorito? ');
-console.log(`O seu animal favorito é ${animal}.`);
-let cidade = entradaDados.question('Qual a sua cidade? ');
+let cidade = entradaDados.question('Qual a sua cidade atual? ');
 console.log(`A sua cidade é ${cidade}.`);
+
