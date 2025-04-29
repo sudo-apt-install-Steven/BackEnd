@@ -29,7 +29,7 @@ class Imovel {
     }
 
     exibirInformacoes() {
-        return `${this.num}° Imóvel, com ${this.quartos} quartos, tipo ${this.tipo}, localizado no ${this.endereco}.`;
+        return `${this.num}° Imóvel, com ${this.quartos} quartos, tipo: ${this.tipo}, localizado no ${this.endereco}.`;
     }
 }
 
