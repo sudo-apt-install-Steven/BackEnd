@@ -8,7 +8,8 @@ let mes = entradaDados.questionInt('Qual o mês do seu nascimento? (1-12) ');
 let anoAtual = new Date().getFullYear();
 let anoNascimento = anoAtual - idade;
 let anoNascimento2 = anoAtual - (idade + 1)
-if (mes < 5) {
+let dia = entradaDados.question('Qual o dia do seu Nascimeto/Aniversário? ')
+if (mes < 5 && dia < 30) {
     console.log(`Você nasceu no mês de ${mes}.`);
     console.log(`Você nasceu em ${anoNascimento}.`);
 }
@@ -19,3 +20,7 @@ else {
 let cidade = entradaDados.question('Qual a sua cidade atual? ');
 console.log(`A sua cidade é ${cidade}.`);
 
+/*
+let diaAtual = new Date().getDate
+console.log(diaAtual);
+*/
