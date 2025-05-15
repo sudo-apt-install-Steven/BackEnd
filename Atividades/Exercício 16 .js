@@ -6,7 +6,7 @@ Faça um programa que leia a categoria de bonificação e o
 salário atual de um funcionário, em seguida calcule e
 imprima o seu novo salário. Use a instrução switch.
 */
-
+import entradaDados from 'readline-sync';
 let readline = require('readline');
 
 let rl = readline.createInterface({

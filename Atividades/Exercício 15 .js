@@ -4,7 +4,7 @@ informar dois valores e a operação desejada.
 Com auxílio de um switch deve ser computado e mostrado o resultado da
 operação.
 */
-
+import entradaDados from 'readline-sync';
 let readline = require('readline');
 
 let rl = readline.createInterface({
