@@ -60,7 +60,9 @@ rl.question('Digite um número de 1 a 12 para representar um mês: ', (numeroMes
 /* comando para executar: node "atividades BackEnd/Exercício 14 .js" 
 */
 
-let mes = 10;
+import rl from 'readline-sync';
+
+let mes = rl.questionInt("Informe um valor entre 1 e 12: ")
 
 if (mes == 1) console.log("Janeiro");
 if (mes == 2) console.log("Fevereiro");
@@ -74,3 +76,9 @@ if (mes == 9) console.log("Setembro");
 if (mes == 10) console.log("Outubro");
 if (mes == 11) console.log("Novembro");
 if (mes == 12) console.log("Dezembro");
+
+/* 
+
+comando para Executar: node "Atividades/Exercício 14 .js"
+
+*/
