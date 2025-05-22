@@ -6,52 +6,35 @@ Faça um programa que leia a categoria de bonificação e o
 salário atual de um funcionário, em seguida calcule e
 imprima o seu novo salário. Use a instrução switch.
 */
-import entradaDados from 'readline-sync';
-let readline = require('readline');
 
-let rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+import rl from 'readline-sync'
 
-rl.question('Digite a categoria de bonificação (A, B, C ou D): ', (categoria) => {
-    rl.question('Digite o salário atual: ', (salario) => {
-        let salarioAtual = parseFloat(salario);
-        let novoSalario;
-        let percentual;
+let salario = rl.questionFloat("Informe seu salário: ");
+let cat = rl.question("Informe a categoria de bonificação: ").toUpperCase();
+let bonus = 0;
 
-        switch(categoria.toUpperCase()) {
-            case 'A':
-                percentual = 5;
-                novoSalario = salarioAtual * (1 + percentual/100);
-                break;
-            case 'B':
-                percentual = 10;
-                novoSalario = salarioAtual * (1 + percentual/100);
-                break;
-            case 'C':
-                percentual = 15;
-                novoSalario = salarioAtual * (1 + percentual/100);
-                break;
-            case 'D':
-                percentual = 20;
-                novoSalario = salarioAtual * (1 + percentual/100);
-                break;
-            default:
-                console.log("Categoria inválida! Use A, B, C ou D");
-                rl.close();
-                return;
-        }
-
-        console.log(`Categoria: ${categoria.toUpperCase()}`);
-        console.log(`Percentual de aumento: ${percentual}%`);
-        console.log(`Salário atual: R$ ${salarioAtual.toFixed(2)}`);
-        console.log(`Novo salário: R$ ${novoSalario.toFixed(2)}`);
-        
-        rl.close();
-    });
-});
+switch (cat) {
+    case "A":
+        bonus = salario * 0.05
+        console.log(`Seu novo salário é de: ${(salario+bonus).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+        break;
+    case "B":
+        bonus = salario * 0.10
+        console.log(`Seu novo salário é de: ${(salario+bonus).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+        break;
+    case "C":
+        bonus = salario * 0.15
+        console.log(`Seu novo salário é de: ${(salario+bonus).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+        break;
+    case "D":
+        bonus = salario * 0.20
+        console.log(`Seu novo salário é de: ${(salario+bonus).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+        break;
+    default:
+        console.log("   Opção Inválida!!! \n    Pare de ser Burro e digita o que pede. ");
+        break;
+}
 
 /* 
-comando para executar: node "atividades BackEnd/Exercício 16 .js"
+comando para executar: node "Atividades/Exercício 16 .js"
 */
