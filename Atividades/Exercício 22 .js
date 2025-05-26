@@ -1,3 +1,12 @@
+/* 
+
+Escreva um programa que itere sobre as propriedades
+de um objeto e imprima suas chaves e valores.
+
+*/
+
+
+
 const pessoa = {
     nome: "Carlos Eduardo dos Santos",
     dtNasc: "22/02/2002",
