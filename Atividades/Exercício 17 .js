@@ -10,3 +10,7 @@ while (cnt <= 10) {
     console.log(`${cnt} x ${num} = ${cnt*num}`);
     cnt++;
 }
+
+/* 
+comando para executar: node "Atividades/Exercício 17 .js"
+*/
