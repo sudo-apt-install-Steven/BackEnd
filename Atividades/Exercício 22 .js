@@ -5,8 +5,7 @@ const pessoa = {
     sexo: "M"
 }
 
-// console.log(pessoa)
-// console.log("Nome: " + pessoa.nome);
+
 for (const key in pessoa) {
     console.log(`${key}: ${pessoa[key]}`);
 }
