@@ -16,7 +16,7 @@ function calcularAreaCirculo(raio) {
         return 'Por favor, insira um valor válido para o raio.';
     }
     
-    const area = Math.PI * Math.pow(raio, 2);
+    const area = Math.PI * Math.pow(raio, 2); // Math.pow é elevar, exemplo: Math.pow(2, 3); seria 2 elevado a 3.
     return `A área do círculo com raio ${raio} é: ${area.toFixed(2)}`;
 }
 

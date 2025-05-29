@@ -34,4 +34,12 @@ const cxAlta = function (texto) {
 
 //Função de Seta.
 const tdMaiusculas = (texto) => texto.toUpperCase();
-console.log(tdMaiusculas(frase));
+console.log("\n\n\n                     ", (tdMaiusculas(frase)), "\n\n\n");
+
+
+
+/*
+    comando para executar: node "Atividades/Exercício 25 .js"
+
+    comando para suportar acentos: chcp 65001
+*/
