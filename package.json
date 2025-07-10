@@ -4,6 +4,7 @@
   "type": "module",
   "main": "aula-1 .js",
   "dependencies": {
+    "express": "^5.1.0",
     "readline-sync": "^1.4.10"
   },
   "scripts": {
