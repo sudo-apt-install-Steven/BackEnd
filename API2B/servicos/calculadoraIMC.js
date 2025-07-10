@@ -28,5 +28,20 @@ function retornaStatusIMC(imc)
     return status;
 }
 
-export {efetuarCalculoIMC, retornaStatusIMC};
+function validaParametro(parametro)
+{
+    if(parametro)
+    {
+        if (isNaN(parametro))
+        {
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+}
+
+export {efetuarCalculoIMC, retornaStatusIMC, validaParametro};
 
