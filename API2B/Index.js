@@ -1,21 +1,21 @@
 import express from 'express';
 const app = express();
+import { efetuarCalculoIMC, retornaStatusIMC } from './servicos/calculadoraIMC.js';
+
 
 app.get('/', (req, res) => {
-    let usuário = "Steven"
-    let mensagem = {mensagem: 'Olá! Seja Bem-Vindo ' + usuário + '!'}
-    res.send(mensagem);
-})
+    
+    let peso = req.query.peso;
+    let altura = req.query.altura;
+    let imc = efetuarCalculoIMC(peso, altura);
+    let status = retornaStatusIMC(imc)
 
-/*
-app.get('/', (req, res) => {
-    res.json({mensagem: 'Hello World'})
-})
-*/
-
+    res.json({imc: imc,status: status})
+});
 
 
 app.listen(8080, () => {
     let data = new Date();
-    console.log("Servidor node Iniciado em: " + Data);
-})
+    console.log("Servidor node Iniciado em: " + data);
+});
+
