@@ -40,10 +40,13 @@ function validaParametro(parametro)
             return true;
         }
     }
+    else {
+        return false
+    }
 }
 
 export {efetuarCalculoIMC, retornaStatusIMC, validaParametro};
 
 // comando (terminal do VScode) para executar:          node API2B\index.js
-// Link: http://localhost:8080/             Exemplo:    http://localhost:8080/?peso=54&altura=1.70
-//usar o Postman para testar.
+// Link: http://localhost:8080/             Exemplo:    
+//usar o Postman para testar.http://localhost:8080/?peso=54&altura=1.70
