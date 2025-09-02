@@ -1,4 +1,3 @@
-//import colecaoUf from "./dados/dados.js";
 import express from 'express';
 import { buscarUfs, buscarUfsPorId, buscarUfsPorNome } from './servicos/servico.js';
 
