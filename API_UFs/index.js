@@ -3,10 +3,19 @@ import express from 'express'; // metodo novo
 
 const app = express();
 
-app.get('/ufs', (req, res) => {
-    res.json(colecaoUf);
-});
+const buscarUfsporNome = (nomeUf) => {
+    return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()))
+};
 
+app.get('/ufs', (req, res) => {
+    const nomeUf = req.query.busca;
+    const resultado = nomeUf ? buscarUfsporNome(nomeUf) : colecaoUf;
+    if (resultado.length > 0) {
+        res.json(resultado);
+    } else {
+        res.status(404).send({ "erro": "Nenhuma Uf encontrada" });
+    }
+});
 
 app.get('/ufs/:iduf', (req, res) => {
     const idUF = parseInt(req.params.iduf);
@@ -38,3 +47,8 @@ app.listen(8080, () => {
     let data = new Date();
     console.log('Servidor Iniciado na porta 8080 em: ' + data);
 });
+
+
+
+
+
