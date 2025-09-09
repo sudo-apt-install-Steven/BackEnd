@@ -1,0 +1,167 @@
+const colecaogenero = [
+  {
+    id: 1,
+    genero: "FPS",
+    nome: "Call of Duty: Modern Warfare",
+    plataforma: "PC",
+  },
+  {
+    id: 2,
+    genero: "Estratégia",
+    nome: "Civilization VI",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 3,
+    genero: "Esporte",
+    nome: "FIFA 23",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 4,
+    genero: "Ação",
+    nome: "Grand Theft Auto V",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 5,
+    genero: "Aventura",
+    nome: "Minecraft",
+    plataforma: "PC",
+  },
+  {
+    id: 6,
+    genero: "Puzzle",
+    nome: "Portal 2",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 7,
+    genero: "Ação",
+    nome: "Red Dead Redemption 2",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 8,
+    genero: "plataforma ",
+    nome: "Super Mario Odyssey",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 9,
+    genero: "RPG",
+    nome: "The Elder Scrolls V: Skyrim",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 10,
+    genero: "RPG",
+    nome: "The Witcher 3: Wild Hunt",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 11,
+    genero: "Estratégia",
+    nome: "Age of Empires IV",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 12,
+    genero: "Plataforma",
+    nome: "Celeste",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 13,
+    genero: "Simulação",
+    nome: "Cities: Skylines",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 14,
+    genero: "FPS",
+    nome: "Counter-Strike 2",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 15,
+    genero: "RPG",
+    nome: "Cyberpunk 2077",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 16,
+    genero: "Ação",
+    nome: "God of War",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 17,
+    genero: "RPG",
+    nome: "Mass Effect Legendary Edition",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 18,
+    genero: "Esporte",
+    nome: "Rocket League",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 19,
+    genero: "Ação",
+    nome: "Spider-Man Remastered",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 20,
+    genero: "Puzzle",
+    nome: "Tetris Effect",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 21,
+    genero: "Aventura",
+    nome: "The Legend of Zelda: Breath of the Wild",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 22,
+    genero: "Simulação",
+    nome: "The Sims 4",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 23,
+    genero: "FPS",
+    nome: "Valorant",
+    plataforma: "CONSOLE",
+  },
+  {
+    id: 24,
+    genero: "RPG",
+    nome: "Elden Ring",
+    plataforma: "PC",
+  },
+  {
+    id: 25,
+    genero: "plataforma",
+    nome: "Fall Guyse",
+    plataforma: "PS",
+  },
+  {
+    id: 26,
+    genero: "Simulação",
+    nome: "Stardew Valley",
+    plataforma: "PC",
+  },
+  {
+    id: 27,
+    genero: "FPS",
+    nome: "Overwatch 2",
+    plataforma: "XBOX",
+  },
+];
+
+export default colecaogenero; /* Quando queremos exportar um único recurso.*/
+

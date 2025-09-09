@@ -1,11 +1,13 @@
 import colecaoUf from './dados/dados.js'
 import express from 'express'; // metodo novo
+import { buscarUfsporSigla } from './servico/servico.js';
 
 const app = express();
 
 const buscarUfsporNome = (nomeUf) => {
     return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()))
 };
+
 
 app.get('/ufs', (req, res) => {
     const nomeUf = req.query.busca;
@@ -14,6 +16,17 @@ app.get('/ufs', (req, res) => {
         res.json(resultado);
     } else {
         res.status(404).send({ "erro": "Nenhuma Uf encontrada" });
+    }
+});
+
+app.get('/ufs/sigla/:siglauf', (req, res) => {
+    const siglaUf = req.params.siglauf;
+    const uf = buscarUfsporSigla(siglaUf);
+
+    if (uf) {
+        res.json(uf)
+    } else {
+        res.status(404).json({ "erro": "Uf não Encontrada" })
     }
 });
 
