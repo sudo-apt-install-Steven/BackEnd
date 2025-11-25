@@ -1,0 +1,19 @@
+{
+  "name": "apis_bancodedados",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3",
+    "node": "^25.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
